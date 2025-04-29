@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-Vindo ao meu portifolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#Saiba Mais">Saiba Mais</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Estou aprendendo a utilizar HTML,CSS,Python e Java.</p>
+            <p>Estou cursando Analise e Desenvolvimento de Sistemas na FAESA e estou no primeiro periodo da faculdade</p>
+            <p>Aqui esta meu curriculo se quiser analisar</p>
+            <a href="assets/pdf/caio.brandao.pdf" target="_blank">Meu curriculo</a>
+
+        </section>
+        <section id="projects">
+            <h2>Meus Projetos</h2>
+            <div class="project-list">
+                <article class="project">
+                    <h3>Amor Eterno</h3>
+                    <p>Site que fiz utilizando HTML5 e CSS3 para enviar para minha namorada</p>
+                    <a href="assets/projects/eu te amo project/Eu_Te_Amo.html" 
+                    target="_blank">Link do Site</a>
+                </article>
+                
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Me Contate</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Menssagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Meu portifolio Caio Brandao Pompermayer Queiroz .</p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

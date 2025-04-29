@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amor Eterno</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+  <style type="text/css">
+    /* ARRUMEI AQUI: cursor de coração usando emoji */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #ffe6e6, #ffd1dc);
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      color: #333;
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">❤️</text></svg>') 16 16, auto;
+      
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 4em;
+      color: #ff4d6d;
+      margin-top: 50px;
+    }
+    h2 {
+      font-size: 2em;
+      color: #ff4d6d;
+      margin-top: -10px;
+    }
+    img {
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+      max-width: 50%;
+      height: auto;
+    }
+    p {
+      font-size: 1.4em;
+      margin: 10px 20px;
+      color: #ff5151;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0;
+    }
+    ul li::before {
+      content: "❤️ ";
+      animation: pulse 1s infinite;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ff4d6d;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s, transform 0.3s;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    a:hover {
+      background-color: #ff1a40;
+      transform: scale(1.1);
+    }
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    .heart {
+      position: fixed;
+      top: 0; 
+      left: 0;
+      animation: fall linear infinite;
+      opacity: 0.8;
+      pointer-events: none;
+      font-size: 20px;
+      z-index: 1000;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <h1>EU TE AMO</h1>
+  <h2>e MUITO</h2>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Brera_Hayez_02.JPG/1024px-Brera_Hayez_02.JPG" alt="nois">
+
+  <p>Eu te amo muito, você é tudo pra mim. Você é a razão do meu viver e eu não sei o que seria de mim sem você.</p>
+  <p>Você é a luz que ilumina meu caminho e o sol que aquece meu coração. Eu te amo mais do que palavras podem expressar.</p>
+  <p>Você é a pessoa mais especial da minha vida e eu sou grato por cada momento que passamos juntos.</p>
+  <p>Eu te amo com todo o meu ser e sempre estarei ao seu lado, não importa o que aconteça.</p>
+  <p>Você é a razão do meu sorriso e a fonte da minha felicidade. Eu te amo mais do que você pode imaginar.</p>
+  <p>Você é a minha vida, meu amor e minha paixão. Eu te amo mais do que tudo neste mundo.</p>
+
+  <div class="container">
+    <div class="coraçao">❤️</div>
+    <img src="https://i.imgur.com/wpovtXC.jpeg" alt="Minha Foto" width="500" height="500">
+  </div>
+  
+
+  <ul>
+    <li>Você é a razão do meu viver.</li>
+    <li>Você é a luz que ilumina meu caminho.</li>
+    <li>Você é o sol que aquece meu coração.</li>
+    <li>Eu sou grato por cada momento que passamos juntos.</li>
+    <li>Eu te amo com todo o meu ser.</li>
+    <li>Você é a razão do meu sorriso.</li>
+    <li>Você é a fonte da minha felicidade.</li>
+    <li>Eu te amo mais do que tudo neste mundo.</li>
+    <li>Você é a minha vida, meu amor e minha paixão.</li>
+  </ul>
+
+  <a href="#" target="_blank">Meu Coração É Todo Seu, Princesa ❤️</a>
+
+  <script>
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerText = '❤️';
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = (Math.random() * 20 + 10) + "px";
+      heart.style.animationDuration = (3 + Math.random() * 2) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }, 200);
+  </script>
+
+</body>
+</html>
